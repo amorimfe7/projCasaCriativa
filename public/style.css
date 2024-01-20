@@ -1,0 +1,391 @@
+
+
+body{
+    background: #e5e5e5;
+    color: #252823;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.hideScroll{
+    overflow: hidden;
+}
+
+a{
+    color: #ff5E84;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration:underline
+}
+
+.p{
+    line-height: 24px;
+}
+
+p, .description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+#container{
+    display: flex;
+    width: 80%;
+    max-width: 980px;
+
+    margin: 50px auto;
+}
+
+#intro{
+    width: 300px;
+
+    margin-right: 64px;
+}
+
+main{
+    margin: 32px 0;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+    
+}
+
+#buttons{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+    color: #808080;
+}
+
+footer:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+button{
+    color: #ff5E84;
+    border: none;
+    font-weight: bold;
+
+    background: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 10px 8px 16px rgba(255, 0, 92, 0.20);
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+    cursor: pointer;
+
+}
+
+button:hover, .button:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.button{
+    background: #ff5E84;
+    color: white;
+    text-decoration: none;
+
+    width: 150px;
+    height: 40px;
+    border-radius: 6px ;
+    box-shadow: 10px 8px 16px rgba(255, 0, 92, 0.20);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: end;
+    
+}
+
+button.link-button{
+    background: #ff5E84;
+    color: white;
+
+    width: 130px;
+    height: 30px;
+    box-shadow: 5px 5px 16px rgba(31, 31, 31, 0.2);
+    
+}
+
+.idea{
+    display: flex;
+    margin-left: 40px;
+
+    border-right: 1px solid #ff5E84;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px - 10px rgb(1, 1, 1, 0.1);
+    background-color: #FFF;
+    
+    padding: 28px;
+    margin-bottom: 30px;
+}
+
+.idea img{
+    width: 60px;
+    height: 60px;
+
+    margin-right: 32px;
+}
+
+.idea h3{
+    margin: 0;
+}
+
+.idea p{
+    font-weight: 400;
+    margin: 8px 0;
+    color:#808080
+}
+
+.idea .description{
+    margin: 20px 0;
+}
+
+#modal{
+    background: #ff5E84;
+    
+    position: fixed;
+    height: 300vh;
+    
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+
+    /*antes estavamos utilizando: ViewPort p/ o modal, oq gerou uma barra de rolagem nas laterais. Dessa forma a melhor utilização seria as margens em 0px*/
+
+
+    display: flex;
+    
+    justify-content: center;
+
+    transition: 400ms;
+}
+
+/*
+#modal .addScroll{
+    overflow: auto;
+}
+*/
+
+
+#modal .content{
+    margin-top: 0%;
+
+    color: white;
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form{
+    width: 80%;
+    max-width: 980px;
+
+    margin: 0 auto 5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 3px;
+    column-gap: 10px;
+}
+
+
+.content form div:nth-child(3), 
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2; 
+}
+
+
+form input, form textarea{
+    width: 100%; 
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    border-radius: 6px;
+    border: 1px solid rgba(240, 0, 56, 0.288);
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+form label{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
+
+form a{
+    background-color: rgba(182, 16, 55, 0.219);
+    color: white;
+
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+
+    font-size: 18px;
+    letter-spacing: 0.2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: end;
+}
+
+form a:hover{
+    background-color: #ffffff;
+    color: #ff5E84;
+
+    text-decoration: none;
+
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+form button{
+    width: 200px;
+    height: 40px;
+
+    cursor: pointer;
+    margin-top: 28px;
+
+    grid-column: 2;
+    justify-self: end;
+
+    font-size: 18px;
+    letter-spacing: 0.2px;
+}
+
+form button:hover{
+    background-color: #0059ff;
+    color: white;
+
+    text-decoration: none;
+}
+
+#modal.hide{
+   opacity: 0;
+   visibility: hidden;
+}
+
+
+/*MINHAS-IDEIAS.HTML*/
+#page-my-ideas #container{
+    display: block;
+}
+
+#page-my-ideas header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-my-ideas nav{
+    display: flex;
+    align-items: center;
+}
+
+#page-my-ideas nav li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#page-my-ideas nav li:last-child{
+    margin: 0;
+}
+
+#page-my-ideas nav li:last-child a:hover{
+    background-color: #0059ff;
+    text-decoration: none;
+}
+
+#page-my-ideas nav li:last-child a{
+    background-color: #ff5E84;
+    color: white;
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-my-ideas nav li:last-child a:hover{
+    background-color: #0059ff;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+
+#page-my-ideas section#title{
+    text-align: center;
+}
+
+#page-my-ideas section#title p{
+    opacity: 0.7;
+
+    margin: 0;
+}
+
+#page-my-ideas section#title h1{
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+
+    margin: 0;
+}
+
+#page-my-ideas section#ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+
+#page-my-ideas section#title,
+#page-my-ideas section#ideas,
+#page-my-ideas footer{
+    margin-top: 60px;
+}
+
+
